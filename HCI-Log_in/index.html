@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="log-in.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <!-- Added id="login-form" so JS can target it -->
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span id="username-error" class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="password-error" class="error-message"></span>
+            </div>
+            
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="form-help">
+            Forgot your password? <a href="#">Click here to recover it.</a>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

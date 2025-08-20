@@ -1,0 +1,94 @@
+/* General page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/doggy.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container box */
+.container {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccbbbb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: rgb(198, 177, 177);
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background: #0056b3;
+}
+
+/* Error messages */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 3px;
+    display: block;
+}
+
+/* Help text */
+.form-help {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Success & general feedback */
+#feedback {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+}
